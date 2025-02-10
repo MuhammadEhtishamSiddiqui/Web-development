@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Property</title>
+    <style>
+        .item{
+            background-color: rgb(228, 148, 87);
+            color: white;
+            height: 100px;
+            margin: 20px;
+            width: 100px;
+            border: 1px solid black;
+
+        }
+        /* Flex container properties */
+        .container{
+            display: flex;
+            gap: 20px;
+            border: 1px solid black;
+            height: 400px;
+
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            justify-content: space-evenly
+        }
+        /* Flex items properties */
+        #item1{
+            flex-grow: 3;
+            flex-shrink: 3;
+            flex: 2 3;
+            order: 5;
+        }
+        /* #item2{
+            flex-grow: 2;
+            /* flex-shrink:  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">Item 1</div>
+        <div class="item" id="item2">Item 2</div>
+        <div class="item" id="item3">Item3</div>
+        <div class="item" id="item4">Item4</div>
+
+
+    </div>
+</body>
+</html>

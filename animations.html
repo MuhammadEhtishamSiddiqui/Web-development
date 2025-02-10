@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        /* body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }*/
+        
+        .box{
+            width: 150px;
+            height: 150px;
+            position: relative;
+            border: 1px solid black;
+            border-radius: 50%;
+            animation-name: movement;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            background-color: rgb(70, 134, 113);
+        }
+        /* @keyframes change-color{
+            from{
+                background-color:red
+            }
+            to{
+                background-color: yellow;
+                height: 200px;
+                width: 200px;
+               
+            }
+        }  */
+        @keyframes movement{
+                    0%{
+                        top: 0;
+                        left: 0;
+                    }
+                    25%{
+                        top: 0;
+                        left: 1350px;
+                    }
+                    50%{
+                        top: 550px;
+                        left: 1350px;
+                    }
+                    75%{
+                        top:550px ;
+                        left: 0px;
+                    }
+                    100%{
+                        top: 0;
+                        left:0;
+                    }
+                }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
