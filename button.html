@@ -4,31 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="st.css">
 </head>
 <body>
+    <button onclick="console.log(`Quantity:${showQuantity}`)">Show Quantity</button>
+
     <button onclick="
-        console.log(`Quantity:${ShowQuantity}`)"; >
-    Show Quantity</button>
+    showQuantity=showQuantity+1;
+    console.log(`Quantity:${showQuantity}`)">Add to card</button>
 
-    <button 
-    onclick="
-    ShowQuantity=ShowQuantity+1;
-    console.log(`Quantity:${ShowQuantity}`)";>
-    Add to card</button>
-
-    <button onclick="ShowQuantity=ShowQuantity+2
-    console.log(`Quantity:${ShowQuantity}`)";>
-
-    +2</button>
-    <button onclick="
-    ShowQuantity=ShowQuantity*0
-    console.log(`Quantity:${ShowQuantity}`)";>
-
-        Rset Card</button>
+    <button  onclick="
+    showQuantity=showQuantity+2;
+    console.log(`Quantity:${showQuantity}`)">+2</button>
+    <button onclick="showQuantity=showQuantity*0;console.log(`Quantity:${showQuantity}`)">Reset Card</button>
 
         <script>
-            let ShowQuantity = 0
+            let showQuantity = 0
         </script>
+
+        <div class="boxes">
+            
+        </div>
 
 </body>
 </html>

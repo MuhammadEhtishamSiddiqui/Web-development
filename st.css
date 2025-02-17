@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(114, 144, 199);
+}
+button{
+    padding: 5px;
+    display: block;
+    /* margin: 10px; */
+    margin-top: 75%;
+    border-radius: 10px;
+    border: solid 1 px black;
+    background-color: cadetblue;
+    color: cornsilk;
+    gap: 10px;
+
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: all 1s;
+    transform:scale(180deg);
+}
+.boxes{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
