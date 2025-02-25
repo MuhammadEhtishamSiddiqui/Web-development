@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let person = {
+    name : "jordrn",
+    age : "9",
+    city : "karachi",
+}
+console.log(person);
+for (let key in person){
+    console.log(`the ${key} is ${person[key]}`);
+    
+}
+console.log;
+let parsonStr = JSON.stringify(person)
+console.log(parsonStr);
+localStorage.setItem("person",parsonStr)
+
+let person1 = JSON.parse(parsonStr)
+    console.log(person1);
+    localStorage.removeItem(person,personStr)
+
+ 
+</script>
+</html>
