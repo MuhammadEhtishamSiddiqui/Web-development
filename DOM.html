@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn" id="id1" onclick="changeText()">Subscribe</button>
+    <button class="color" onclick="changeColor()">Change color</button>
+    <script>
+        // console.log(document.title);
+        // let button = document.getElementsByClassName
+        let btn = document.querySelector('#id1')
+        function changeText(){
+            if (btn.innerHTML=="Subscribe"){
+            btn.innerHTML= "Subscribed"
+        }
+        else{
+            btn.innerHTML = "Subscribe"
+        }
+        }
+      
+
+        {
+            let btn1 = document.querySelector(".color")
+            function changeColor(){
+                btn1.style.backgroundColor = "green"
+            }
+        }
+        
+    </script>
+</body>
+</html>
