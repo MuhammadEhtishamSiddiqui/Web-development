@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: aquamarine;
+        }
+        .display{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">
+        <p>Heading</p>
+    </h1>
+    <ul id="lists"></ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem corrupti, eaque dolores iste culpa minus est rem facere nobis et quos veniam deserunt laudantium hic consectetur sunt consequuntur, porro officia!</p>
+    <button class="btn" onclick="toogle2()">Show/Hide</button>
+    <script>
+        let a = document.querySelector('.heading')
+        a.innerHTML = "<u>Paragraph</u>"
+        console.log(a.innerHTML);
+        let c = document.createElement("li")
+        c.innerHTML = "list1"
+        c.classList.add('highlight')
+        document.querySelector('#lists').appendChild(c)
+
+        function toggle2(){
+            // let btn = document.querySelector(".btn")
+            let para = document.querySelector(".para")
+            para.classList.toggle('display')
+            // if (para.style.display == "none"){
+                // para.style.display == "block"
+            }
+            // else{
+                // para.style.display = "none"
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
