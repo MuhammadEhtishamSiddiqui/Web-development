@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .done{
+            text-decoration: line-through;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="to-do" id= "input">
+    <button id="btn" onclick="">Add new Task</button>
+    <div class="to-do-list"></div>
+    <script>
+        let input = document.getElementById('input')
+        let btn = document.getElementById('btn')
+
+        btn.addEventListener('click', addTask)
+        function addTask(){
+            if(!input.value){
+                alert('please enter your value')
+                return
+            }
+            let li = document.createElement('li')
+            li.innerHTML = input.value
+            li.addEventListener('click', function(){
+                li.classList.toggle('done')
+            })
+            
+            document.querySelector('.to-do-list').appendChild(li)
+            input.value =''
+            
+        }
+    </script>
+</body>
+</html>
