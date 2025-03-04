@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: rgb(163, 196, 196);
+    margin: 0;
+    font-family: pappins;
+    height: 100%;
+    /* display: flex; */
+}
+.heading{
+    background-color: rgb(8, 8, 148);
+    color: white;
+    margin: 0;
+    padding: 10px;text-align: center;
+    /* font-size: small; */
+
+}
+.heading2{
+    background-color: aqua;
+    align-items: end;
+}
+.container{
+    background-color: white;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    box-shadow: 10 10 10;
+    margin: auto;
+    
+}
+.btn{
+    background-color: rgb(52, 52, 231);
+    color: white;
+    width: 96%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+
+}
+input{
+    margin: 4px;
+    width: 95%;
+    height: 20%;
+
+}
+
+
